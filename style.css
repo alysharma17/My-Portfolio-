@@ -408,7 +408,6 @@ header.desktop-header-1 .vertical-menu li .switch {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-backface-visibility: hidden;
 }
 header.desktop-header-1 .vertical-menu li a {
   color: #FFF;
@@ -1443,9 +1442,9 @@ select.portfolio-filter-mobile {
   transform: translateX(-50%);
   height: 4px;
   width: 4px;
-  -webkit-animation: ani-mouse 2s linear infinite;
-  -moz-animation: ani-mouse 2s linear infinite;
-  animation: ani-mouse 2s linear infinite;
+  animation-name:ani-mouse;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
 }
 
 .circle {
@@ -1984,11 +1983,7 @@ body.dark footer.footer {
   height: 100%;
 }
 
-.mfp-zoom-in {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
+
 .mfp-zoom-in .mfp-with-anim {
   opacity: 0;
   transition: all 0.2s ease-in-out;
